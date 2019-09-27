@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "EJP Conference App",
+    "type": "PWA for iPad",
+    "client": "Patra Company"
+  },
+  {
+    "id": 2,
+    "name": "SchoolDude University",
+    "type": "Website",
+    "client": "Dude Solutions"
+  },
+  {
+    "id": 3,
+    "name": "SchoolDude.com",
+    "type": "Website",
+    "client": "Dude Solutions"
+  },
+  {
+    "id": 4,
+    "name": "Timberland GCS",
+    "type": "Website",
+    "client": "Timberland"
+  },
+  {
+    "id": 5,
+    "name": "Timberland Boot Co",
+    "type": "Microsite",
+    "client": "Timberland"
+  },
+  {
+    "id": 6,
+    "name": "KOMBIT Film",
+    "type": "Microsite",
+    "client": "Timberland"
+  },
+  {
+    "id": 7,
+    "name": "Timberland Pro Canada",
+    "type": "Website",
+    "client": "Timberland"
+  },
+  {
+    "id": 8,
+    "name": "Timberland.com",
+    "type": "Components",
+    "client": "Timberland"
+  },
+  {
+    "id": 9,
+    "name": "AMS Website",
+    "type": "Website",
+    "client": "American Meteorological Society"
+  },
+  {
+    "id": 10,
+    "name": "Recognition",
+    "type": "Website",
+    "client": "UCSF"
+  },
+  {
+    "id": 11,
+    "name": "Champion Provider",
+    "type": "Website",
+    "client": "UCSF"
+  },
+  {
+    "id": 12,
+    "name": "Resource Library",
+    "type": "???",
+    "client": "Dude Solutions"
+  },
+  {
+    "id": 13,
+    "name": "Cannabis 100",
+    "type": "Microsite",
+    "client": "Canaccord Genuity"
+  },
+  {
+    "id": 14,
+    "name": "School Projects",
+    "type": "Web Applications",
+    "client": "Flatiron School"
+  }
+]

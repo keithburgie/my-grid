@@ -1,0 +1,79 @@
+@import '../styles/media-queries';
+
+$spacer: 1rem;
+$columns: 12;
+
+@mixin column-sizes {
+  @for $num from 1 through $columns {
+    &-#{$num} {
+      flex-basis: percentage($num / $columns);
+    }
+  }
+}
+
+.container {
+  max-width: $xl-screen;
+  margin: 0 auto;
+  padding: 0 $spacer;
+  display: flex;
+  flex-direction: column;
+
+  .row {
+    padding: $spacer;
+    display: flex;
+    flex: 1;
+    flex-flow: row wrap;
+    margin-left: -$spacer;
+    margin-right: -$spacer;
+
+    &__header {
+      margin-bottom: $spacer;
+      text-align: center;
+      width: 100%;
+    }
+
+    .column {
+      flex: 0 1 100%; // -grow, -shrink, -basis
+      margin: 0 0 $spacer * 2;
+      padding: $spacer;
+      text-align: center;
+      transition: all 0.3s linear;
+
+      &.xs-only {
+        @include xs-screen-only {
+          @include column-sizes;
+        }
+      }
+      &.sm {
+        @include sm-screen {
+          @include column-sizes;
+        }
+      }
+      &.md {
+        @include md-screen {
+          @include column-sizes;
+        }
+      }
+      &.lg {
+        @include lg-screen {
+          @include column-sizes;
+        }
+      }
+      &.xl {
+        @include xl-screen {
+          @include column-sizes;
+        }
+      }
+
+      img {
+        transition: all 0.2s linear;
+        filter: grayscale(100%);
+
+        &:hover {
+          cursor: pointer;
+          filter: grayscale(0%);
+        }
+      }
+    }
+  }
+}

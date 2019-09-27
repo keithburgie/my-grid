@@ -1,0 +1,35 @@
+@function calcRem($size) {
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
+}
+
+$sm-screen: calcRem(480);
+$md-screen: calcRem(768);
+$lg-screen: calcRem(1140);
+$xl-screen: calcRem(1400);
+
+@mixin xs-screen-only {
+  @media (max-width: ($sm-screen - 1)) {
+    @content;
+  }
+}
+@mixin sm-screen {
+  @media (min-width: $sm-screen) {
+    @content;
+  }
+}
+@mixin md-screen {
+  @media (min-width: $md-screen) {
+    @content;
+  }
+}
+@mixin lg-screen {
+  @media (min-width: $lg-screen) {
+    @content;
+  }
+}
+@mixin xl-screen {
+  @media (min-width: $xl-screen) {
+    @content;
+  }
+}

@@ -1,0 +1,46 @@
+@import './media-queries';
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.625rem;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+@include md-screen {
+  h1 {
+    font-size: 2.25rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@include lg-screen {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+
+@include xl-screen {
+}
+
+.lead {
+  font-size: 125%;
+  line-height: 1.6;
+}
